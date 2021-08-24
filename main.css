@@ -1,38 +1,47 @@
 body {
-    background: linear-gradient(0deg, rgba(96,96,96,1) 0%, rgba(18,18,18,1) 100%);
+    background: #353132;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f47320 0%, #303030 50%, #231f20 85%, #e35120 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f47320 0%, #303030 15%, #231f20 85%, #e35120 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     height: 100vh;
 }
 
 header {
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
     width: auto;
-    display: flex;
     text-align: center;
-    position: absolute;
-    z-index: 2;
     color: #F2F2F2;
     font-family: 'Barlow';
     font-weight: 500;
     font-size: 64px;
 }
 
-.headerTriangle {
-    width: 1024px;
-    display: flex;
-    justify-content: center;
-    z-index: 0;
+h2 {
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    color: #F2F2F2;
+    font-family: 'Barlow';
+    font-weight: lighter;
+    font-size: 42px;
 }
 
 .headerLogo {
     width: 256px;
     height: 256px;
+}
+
+.logoName {
+    width: 100vw;
     display: flex;
-    align-self: flex-end;
-    position: absolute;
-    z-index: 1;
+    flex-direction: row;
+    justify-content: center;
 }
